@@ -44,6 +44,7 @@ async function authFlow({lastname, csid, username, config=defaultConfig}) {
   console.log('LOG: JWT (base64):', JWT)
   console.log('LOG: JWT:',base64Decode(JWT))
   
+
   // Use Bearer Token flow to get access token from SP
   let JWTBearerTokenFlowReponse = '';
   try {
